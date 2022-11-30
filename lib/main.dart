@@ -1,4 +1,4 @@
-import 'package:behan_study/view/screen/main/main.dart';
+import 'package:behan_study/view/screen/main/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
