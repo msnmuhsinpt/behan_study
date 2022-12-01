@@ -128,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         ),
                                         appTextView(
                                             name:
-                                                '${items[index]['sirName']}{20B9}'),
+                                                '${items[index]['sirName']}'),
                                       ],
                                     ),
                                   ),
@@ -138,10 +138,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                       mainAxisAlignment:
                                           MainAxisAlignment.start,
                                       children: [
-                                        appTextView(
-                                            name: '${items[index]['fee']}',
-                                            color: AppColor.kBlue,
-                                            isBold: true),
+                                        Row(
+                                          children: [
+                                            appTextView(
+                                                name: '${items[index]['fee']} \u{20B9}',
+                                                color: AppColor.kBlue,
+                                                isBold: true),
+
+                                          ],
+                                        ),
                                         dividerW(),
                                         SizedBox(
                                           height: 25,
