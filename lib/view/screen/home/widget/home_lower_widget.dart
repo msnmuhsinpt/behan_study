@@ -27,7 +27,7 @@ class HomeLowerWidget extends StatelessWidget {
                 isBold: true,
                 size: 20),
           ),
-        )
+        ),
       ],
     );
   }

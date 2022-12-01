@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "284423870465",
+    "project_id": "behan-study-43d92",
+    "storage_bucket": "behan-study-43d92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284423870465:android:f39baf0d5a6e3cb4f7c800",
+        "android_client_info": {
+          "package_name": "com.example.behan_study"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284423870465-8npq1bepb5re8nkkkus7hb0m3ao53cvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkWCPnO_FDERe-TYOAh5wgT0Po9eDSKxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284423870465-8npq1bepb5re8nkkkus7hb0m3ao53cvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

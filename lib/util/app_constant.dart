@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 
 String icbanner1 = "assets/images/ic_banner1.png";
 String icSlider = 'assets/images/ic_slider.png';
-String icTest = 'assets/images/ic_flutter.png';
+String icPlaceholder = 'assets/images/ic_placeholder.png';
+
 
 // padding size
 

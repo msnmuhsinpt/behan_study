@@ -18,47 +18,60 @@ class HomeUpperWidget extends StatelessWidget {
         ),
         Padding(
           padding: commonPaddingAll20,
-          child: Container(
-            width: screenWidth(context),
-            height: 150,
-            decoration: BoxDecoration(
-              color: AppColor.kBlue,
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                dividerSW(),
-                Image.asset(
-                  icbanner1,
-                  height: 150,
+          child: Stack(
+            children: [
+              SizedBox(
+                height: 160,
+                width: screenWidth(context),
+              ),
+              Positioned(
+                top: 10,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Container(
+                    width: screenWidth(context),
+                    height: 150,
+                      color: AppColor.kBlue,
+
+                    child: Row(
+                      children: [
+                        SizedBox(width: screenWidth(context)/2 -30
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            appTextView(
+                                name: 'Become', isBold: true, color: AppColor.kWhite),
+                            dividerSH(),
+                            appTextView(
+                                name: 'Mater in Data',
+                                isBold: true,
+                                color: AppColor.kWhite),
+                            dividerSH(),
+                            appTextView(
+                                name: 'Science', isBold: true, color: AppColor.kWhite),
+                            dividerSH(),
+                            appTextView(
+                                name: 'by asif abdualrahman',
+                                isBold: true,
+                                size: 8,
+                                color: AppColor.kWhite),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
-                dividerW(),
-                dividerW(),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    appTextView(
-                        name: 'Become', isBold: true, color: AppColor.kWhite),
-                    dividerSH(),
-                    appTextView(
-                        name: 'Mater in Data',
-                        isBold: true,
-                        color: AppColor.kWhite),
-                    dividerSH(),
-                    appTextView(
-                        name: 'Science', isBold: true, color: AppColor.kWhite),
-                    dividerSH(),
-                    appTextView(
-                        name: 'by asif abdualrahman',
-                        isBold: true,
-                        size: 8,
-                        color: AppColor.kWhite),
-                  ],
-                )
-              ],
-            ),
+              ),
+              Positioned(
+                top: 0,
+                child: Image.asset(
+                  icbanner1,
+                  height: 160,
+                ),
+              ),
+            ],
           ),
         ),
         Padding(
