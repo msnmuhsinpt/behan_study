@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:behan_study/util/app_color.dart';
 import 'package:behan_study/view/screen/home/widget/home_upper_widget.dart';
@@ -16,6 +17,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    //firabase screen track
+    FirebaseAnalytics.instance.setCurrentScreen(screenName: 'home');
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -127,8 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           color: AppColor.kGrey,
                                         ),
                                         appTextView(
-                                            name:
-                                                '${items[index]['sirName']}'),
+                                            name: '${items[index]['sirName']}'),
                                       ],
                                     ),
                                   ),
@@ -141,10 +143,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                         Row(
                                           children: [
                                             appTextView(
-                                                name: '${items[index]['fee']} \u{20B9}',
+                                                name:
+                                                    '${items[index]['fee']} \u{20B9}',
                                                 color: AppColor.kBlue,
                                                 isBold: true),
-
                                           ],
                                         ),
                                         dividerW(),
